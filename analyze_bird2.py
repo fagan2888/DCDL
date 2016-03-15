@@ -2,10 +2,12 @@
 import struct
 import numpy as np
 import math
-#import matplotlib.pyplot as plt
+import os
 
-f = open('C:\\Users\\manderson\\Downloads\\birdwav.wav','rb')
-outputfilepath = 'C:\\Users\\manderson\\Documents\\spectrogram.spg'
+dir = os.path.dirname(__file__)
+filename = os.path.abspath(os.path.join(os.path.dirname(__file__),'birdwav.wav'))
+f = open(filename,'rb')
+outputfilepath = os.path.abspath(os.path.join(os.path.dirname(__file__),'spectrogram.spg'))
 f.seek(84)
 a = struct.unpack('<I',f.read(4))
 numsamples = int(a[0]/8)

@@ -14,7 +14,7 @@ Data
 ----
 
 The data is a 12 min stereo audio recording of a forest full of birds. Data is sampled at a rate of 44100 Hz and is a string of 32-bit floats with alternating left and right channels.
-Data may be accessed at https://slack-files.com/T03AGEMF5-F0NPEVA56-b20f2ebc60
+Data may be accessed at https://slack-files.com/T03AGEMF5-F0NE1UFSM-61222ef5a5
 
 Note that posting this raw data to github is not going to happen. Github has a filesize limit of 25MB.
 
